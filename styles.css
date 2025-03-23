@@ -57,9 +57,9 @@ body {
 }
 
 .color-card:hover {
-    transform: translateY(-5px);
-}
+    transform: translateY(-10px) rotate(2deg);
 
+}
 .color-card.textured {
     background-blend-mode: overlay;
     background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADPSURBVHhe7dwxDsJQEETR+w/5A8EHEOxZIBgEExMTEzMzs/39/f0TEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISEhISExMT/AJ5lJ3xQfQeHAAAAAElFTkSuQmCC');
