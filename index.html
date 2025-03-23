@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShadeShaper</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet"> <!-- Forum font -->
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="images/favicon.png">
+    <!-- SEO Meta Tags -->
+
+    <meta name="description"
+        content="ShadeShaper is an advanced color palette generator that helps designers create stunning color combinations effortlessly. Generate Random, Gradient, Monochrome, AI-powered palettes, and more.">
+    <meta name="keywords"
+        content="color palette, color generator, shade shaper, color picker, gradient colors, UI design, web design, hex colors, color harmony, AI color">
+    <meta name="author" content="Donavalli Jayanth">
+
+    <!-- Open Graph (For Social Media) -->
+    <meta property="og:title" content="ShadeShaper - Color Palette Generator">
+    <meta property="og:description"
+        content="Create beautiful color palettes with ShadeShaper. Perfect for designers and developers. Try AI-powered color harmonies now!">
+    <meta property="og:image" content="https://img.icons8.com/external-icongeek26-flat-icongeek26/64/external-colours-uxui-icongeek26-flat-icongeek26.png"> <!-- Update this URL -->
+    <meta property="og:url" content="https://www.jayanth.xyz">
+    <meta property="og:type" content="website">
+</head>
+
+<body>
+    <video autoplay muted loop class="bg-video">
+        <source src="images/b3.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <div class="header">
+            <div class="title-container">
+                <img src="images/logo2.png" alt="ShadeShaper Logo" class="logo">
+                <h1 class="title">ShadeShaper - Color Palette Generator</h1>
+            </div>
+        </div>
+
+        <div class="mode-selector" id="modeSelector">
+            <div class="mode-btn active" data-mode="random">Random</div>
+            <div class="mode-btn" data-mode="monochrome">Monochrome</div>
+            <div class="mode-btn" data-mode="gradient">Gradient</div>
+            <div class="mode-btn" data-mode="ai">AI Harmony</div>
+            <div class="mode-btn" data-mode="mood">Mood</div>
+            <div class="mode-btn" data-mode="image">Image</div>
+        </div>
+        <div class="style-selector" id="styleSelector">
+            <div class="style-btn active" data-style="flat">Flat</div>
+            <div class="style-btn" data-style="textured">Textured</div>
+            <div class="style-btn" data-style="neon">Neon</div>
+        </div>
+        <div class="controls">
+            <div class="options" id="options">
+                <div class="gradient-options" id="gradientOptions" style="display: none;">
+                    <label>Colors:</label>
+                    <input type="number" id="gradientCount" min="2" max="5" value="3">
+                    <button class="manual-btn" id="manualGradient">Manual</button>
+                </div>
+                <div class="ai-options" id="aiOptions" style="display: none;">
+                    <select id="harmonyType">
+                        <option value="complementary">Complementary</option>
+                        <option value="triadic">Triadic</option>
+                        <option value="analogous">Analogous</option>
+                    </select>
+                </div>
+                <div class="mood-options" id="moodOptions" style="display: none;">
+                    <select id="moodType">
+                        <option value="happy">Happy</option>
+                        <option value="calm">Calm</option>
+                        <option value="energetic">Energetic</option>
+                    </select>
+                </div>
+                <div class="image-options" id="imageOptions" style="display: none;">
+                    <input type="file" id="imageUpload" accept="image/*">
+                </div>
+            </div>
+            <button class="generate-btn" id="generateBtn">Generate</button>
+            <button class="refresh-btn" id="refreshBtn" style="display: none;">Refresh</button>
+        </div>
+        <div class="palette-grid" id="paletteGrid"></div>
+        <div class="manual-input" id="manualInput" style="display: none;">
+            <div id="colorInputs"></div>
+            <button class="apply-btn" id="applyManual">Apply Gradient</button>
+        </div>
+        <div class="preview-section" id="previewSection">
+            <h2>Live Preview</h2>
+            <div class="preview-ui">
+                <button class="preview-btn">Button</button>
+                <p class="preview-text">Sample Text</p>
+                <div class="preview-bg"></div>
+            </div>
+        </div>
+        <div class="export-section">
+            <button class="export-btn" id="exportCSS">Export CSS</button>
+            <button class="export-btn" id="exportJSON">Export JSON</button>
+            <button class="export-btn" id="exportSVG">Export SVG</button>
+            <button class="export-btn" id="exportPNG">Export PNG</button>
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="default-text">
+            <h1><a href="https://www.jayanth.xyz" target="_blank">Designed by Donavalli Jayanth</a></h1>
+        </div>
+
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
