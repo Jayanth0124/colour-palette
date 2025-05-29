@@ -55,7 +55,7 @@ ShadeShaper is a **cosmic color tool** designed to craft, blend, and export colo
 ## 👨‍💻 Crafted By
 
 <div align="center">
-  <h3>🚀 Developed by <a href="https://www.jayanth.xyz" target="_blank">Donavalli Jayanth</a></h3>
+  <h3>🚀 Developed by <a href="https://www.jayanth.site" target="_blank">Donavalli Jayanth</a></h3>
 </div>
 
 ---
